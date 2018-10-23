@@ -7,9 +7,9 @@ let config = {
 	devtool: "cheap-eval-source-map",
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "external.latest.js"
+		filename: "widgetjs.js"
 	},
-	entry: "./js/external_main.js",
+	entry: "./src/widgetjs.js",
 	resolve: {
 		modules: [path.resolve(__dirname, "js"), "node_modules"],
 		alias: aliases

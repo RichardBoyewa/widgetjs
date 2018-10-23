@@ -1,6 +1,6 @@
 define([
 	"./routeFactory",
-	"events",
+	"../events",
 	"./routeMatchResult",
 	"./url",
 	"klassified",

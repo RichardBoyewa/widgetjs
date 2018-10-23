@@ -1,5 +1,5 @@
 define([
-	"events",
+	"../events",
 	"./route",
 	"./url",
 	"./hashLocation",
