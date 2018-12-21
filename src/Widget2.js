@@ -91,6 +91,9 @@ define([
 					this[extProperty] = widgetExtensions[extProperty];
 				}
 			}
+
+			this._initialize(...arguments);
+			this._postInitialize(...arguments);
 		}
 
 		/**
