@@ -61,7 +61,7 @@
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-requirejs": "^0.2.6",
     "phantomjs-prebuilt": "^2.1.6",
-    "webpack": "^4.23.1",
+    "webpack": "^4.28.1",
     "webpack-cli": "^3.1.2"
   }
 }

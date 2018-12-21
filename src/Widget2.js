@@ -49,7 +49,7 @@ define([
 	 * @returns {widget}
 	 */
 	return class Widget extends Object {
-		constructor({id}) {
+		constructor({id} = {}) {
 			super(...arguments);
 
 			this._id = id || idGenerator.newId();
@@ -161,7 +161,7 @@ define([
 		 * @param aJQuery
 		 */
 		appendTo(aJQuery) {
-			this._withAttachHooks(function() {
+			this._withAttachHooks(() => {
 				this._renderBasicOn(htmlCanvas(aJQuery));
 			});
 		}
@@ -173,7 +173,7 @@ define([
 		 * @param aJQuery
 		 */
 		replace(aJQuery) {
-			this._withAttachHooks(function() {
+			this._withAttachHooks(() => {
 				var canvas = htmlCanvas(aJQuery);
 				canvas.root.asJQuery().empty();
 				this._renderBasicOn(canvas);

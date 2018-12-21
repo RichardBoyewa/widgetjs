@@ -7,7 +7,9 @@ let config = {
 	devtool: "cheap-eval-source-map",
 	output: {
 		path: path.resolve(__dirname, "dist"),
-		filename: "widgetjs.js"
+		filename: "widgetjs.js",
+		libraryTarget: "umd",
+		library: "widgetjs"
 	},
 	entry: "./src/widgetjs.js",
 	resolve: {
